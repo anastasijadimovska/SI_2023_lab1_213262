@@ -1,0 +1,303 @@
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~ (master)
+$ cd SI
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI (master)
+$ git clone ^[[200~https://github.com/anastasijadimovska/SI_2023_lab1_213262.git~
+Cloning into 'SI_2023_lab1_213262.git~'...
+fatal: protocol '?[200~https' is not supported
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI (master)
+$ git clone https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+Cloning into 'SI_2023_lab1_213262'...
+warning: You appear to have cloned an empty repository.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI (master)
+$ cd SI_2023_lab1_213262
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ nano README.md
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) b0e959f] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 250 bytes | 250.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ nano SILab1.java
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git add .
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git commit -m "Add java class"
+[master d9d17b1] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git branch
+* master
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 626 bytes | 626.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+   b0e959f..d9d17b1  master -> master
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git branch bug1
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git branch bug2
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git branch bug3
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug1)
+$ nano SILab1.java
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 16b4f02] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ nano SILab1.java
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git add .
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 cee0ef3] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ nano SILab1.java
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ git add .
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+[bug3 be6a9c8] Fix method sumEvenNumbers
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug1
+fatal: unable to access 'https://github.com/anastasijadimovska/SI_2023_lab1_213262.git/': Could not resolve host: github.com
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/anastasijadimovska/SI_2023_lab1_213262/pull/new/bug1
+remote:
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ * [new branch]      bug1 -> bug1
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git push origin master bug1
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git push origin master bug2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/anastasijadimovska/SI_2023_lab1_213262/pull/new/bug2
+remote:
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ * [new branch]      bug2 -> bug2
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git push origin master bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/anastasijadimovska/SI_2023_lab1_213262/pull/new/bug3
+remote:
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ * [new branch]      bug3 -> bug3
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git merge bug1
+Updating d9d17b1..16b4f02
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+   d9d17b1..16b4f02  master -> master
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug2
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug3
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug1
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 360 bytes | 360.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+   16b4f02..9957f4b  master -> master
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug2
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug3
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git merge bug3
+Updating 9957f4b..92d27ab
+Fast-forward
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+   9957f4b..92d27ab  master -> master
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug2
+Everything up-to-date
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug3
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ ! [rejected]        bug3 -> bug3 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/anastasijadimovska/SI_2023_lab1_213262.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push origin master bug3
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ ! [rejected]        bug3 -> bug3 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/anastasijadimovska/SI_2023_lab1_213262.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Anastasija@DESKTOP-1ITQVOP MINGW64 ~/SI/SI_2023_lab1_213262 (master)
+$ git push --force origin master bug3
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anastasijadimovska/SI_2023_lab1_213262.git
+ + be6a9c8...92d27ab bug3 -> bug3 (forced update)
+

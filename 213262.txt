@@ -1,0 +1,51 @@
+1. Инсталирав Git и си направив профил на Github
+2. Го променив името на главната гранка од main во master
+3. Креирав приватен репозиториум на Github именуван SI_2023_lab1_213262
+4. Направив директориум на remote репозиториумот, потоа го клонирав локално со командата git clone
+5. При клонирањето, репозиториумот автоматски се поврза со мојата локален директориум
+6. Со помош на nano README.md, git add . , git commit -m "Initial commit" и git push origin master, го додадов README.md фајлот
+7. nano SILab1.java го додадов фајлот и со git add го ставив на сцена и потоа ставив commit message со git commit -m "Add java class"
+8. Ги синхронизирав со git push origin master bug1, git push origin master bug2,git push origin master bug3
+9. Отворив три гранки на master со git branch bug1 , git branch bug2 , git branch bug3
+10. git checkout bug1
+11. Ја поправив грешката и потоа направив git add . па потоа направив git commit -m "Fix wrong loop for reading"
+12. git checkout bug2
+13. Ја поправив грешката и потоа направив git add . па потоа направив git commit -m "Fix wrong condition in filterOddNumbers"
+14. git checkout bug3
+15. Ја поправив грешката и потоа направив git add . па потоа направив git commit -m "Fix method sumEvenNumbers"
+16. Ги синхронизирав со git push origin master bug1, git push origin master bug2,git push origin master bug3
+17. git checkout master
+18. 
+$ git merge bug1
+Updating d9d17b1..16b4f02
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+нема конфликти и се изврши fast forward стратегија
+
+19.  Ги синхронизирав со git push origin master bug1, git push origin master bug2,git push origin master bug3
+20.
+$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+нема конфликти и се споиле според орт стратегијата 
+21. Ги синхронизирав со git push origin master
+22. git checkout bug3
+23. git rebase master
+24. git checkout master
+25. 
+$ git merge bug3
+Updating 9957f4b..92d27ab
+Fast-forward
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+според fast-forward стратегијата
+26. git push --force origin master bug3
+27. nano logs.txt, nano 213262.txt, git add . , git commit -m "Final commit"
+28. Ги синхронизирав со git push origin master bug1, git push origin master bug2,git push origin master bug3
